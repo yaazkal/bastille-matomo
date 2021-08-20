@@ -13,5 +13,5 @@ bastille bootstrap https://github.com/yaazkal/bastille-matomo
 Installs the latest version of matomo
 
 ```shell
-bastille template TARGET yaazkal/bastille-motomo
+bastille template TARGET yaazkal/bastille-matomo
 ```
