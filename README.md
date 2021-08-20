@@ -1,2 +1,2 @@
 # bastille-matomo
-Bastille template for running Matomo (Web Analytics) in a FreeBSD jail
+Bastille template for running [Matomo](https://matomo.org/) (Web Analytics) in a FreeBSD jail
