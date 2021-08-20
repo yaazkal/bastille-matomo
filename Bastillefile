@@ -1,0 +1,14 @@
+CP usr /
+
+PKG php74-curl php74-gd php74-mysqli php74-xml php74-mbstring php74-json ZendFramework-php74 php74-filter php74-openssl nginx mariadb105-server
+
+SYSRC mysql_enable=YES
+SYSRC php_fpm_enable=YES
+SYSRC nginx_enable=YES
+
+SERVICE mysql-server start
+SERVICE php-fpm restart
+SERVICE nginx restart
+
+CP root /
+CMD sh /root/bootstrap_matomo.sh
