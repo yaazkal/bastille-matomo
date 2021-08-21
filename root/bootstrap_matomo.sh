@@ -11,7 +11,7 @@ unzip -q -u -d /usr/local/www /tmp/matomo.zip
 chown -R www:www /usr/local/www/matomo
 
 # Ensure MariaDB runs securely -- @yaazkal
-if [ ! -e /root/.my.pass ]; then
+if [ ! -e /root/.my.cnf ]; then
     echo "[INFO] Securing MariaDB"
     yes | mysql_secure_installation >/dev/null 2>&1
     RANDOM_PASSWORD=$(openssl rand -base64 15)
